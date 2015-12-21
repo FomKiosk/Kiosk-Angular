@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="fomkiosk">
+<head>
+    <meta charset="UTF-8">
+    <title>FOMKIOSK</title>
+    <link rel="stylesheet" href="dist/css/all.css">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img alt="Brand" src="images/logo.png">
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-repeat="item in menu"><a href="#{{item.link}}"><span class="glyphicon glyphicon-{{item.icon}}" aria-hidden="true"></span></a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>
+<div class="container-fluid">
+    <div ng-view></div>
+</div>
+<script src="dist/js/all.js"></script>
+</body>
+</html>

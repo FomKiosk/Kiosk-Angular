@@ -1,5 +1,4 @@
 .idea/
 Thumbs.db
 node_modules/
-app/bower_components/
-angular-seed/
+bower_components/
